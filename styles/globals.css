@@ -1,9 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -13,4 +19,49 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+:root{
+  font-size: 16px;
+  --white: rgba(255,255,255,1);
+	--black: rgba(13,15,17,1);
+	--gray-10: rgba(244,245,246,1);
+	--gray-20: rgba(227,230,232,1);
+	--gray-30: rgba(208,213,216,1);
+	--gray-40: rgba(176,182,186,1);
+	--gray-50: rgba(139,147,152,1);
+	--gray-60: rgba(109,115,120,1);
+	--gray-70: rgba(73,77,80,1);
+	--gray-80: rgba(55,59,63,1);
+	--gray-90: rgba(38,41,44,1);
+	--gray-100: rgba(24,27,29,1);
+}
+
+
+.text-xs{
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+
+.text-sm{
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.text-md{
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.text-2xl{
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.022em;
+}
+
+.font-regular{
+  font-weight: 450;
 }
